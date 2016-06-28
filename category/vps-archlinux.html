@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<title>pcwuyu - Pelican</title>
+<title>pcwuyu</title>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, maximum-scale=1">
 <meta name="description" content="">
@@ -130,7 +130,7 @@ $(document).ready(function() {
 			<figure class="col-lg-9 col-sm-6  text-left wow fadeInUp delay-02s">
 				<article class="post">
 					<header class="entry-header">
-						<h1 class="entry-title"><a href="/posts/2016/06/pelican-install/" rel="bookmark" title="Permalink to Pelican">Pelican</a></h1>
+						<h1 class="entry-title"><a href="/posts/2016/06/20160628/" rel="bookmark" title="Permalink to ArchLinux安装lnmp实录">ArchLinux安装lnmp实录</a></h1>
 						<div class="entry-meta"> 
 							<span class="posted-on">
 								<time class="entry-date published" title="2016-06-28T00:00:00+02:00"> 
@@ -146,8 +146,43 @@ $(document).ready(function() {
 						</div>
 					</header>
 					<div class="entry-content">
-						 <h1>Just4Fun</h1> 
-						 <a class="more-link" href="/posts/2016/06/pelican-install/" rel="bookmark" title="Permalink to Pelican">Read more&#8230;</a>
+						 <h1>1 安装Archlinux</h1>
+<ul>
+<li>1.1 脚本：将任意os切换为ArchLinux：<a href="https://github.com/drizzt/vps2arch">vps2arch</a></li>
+<li>1.2 用法：</li>
+<li>1.2.1 安装screen</li>
+</ul>
+<p>centos：</p>
+<div class="highlight"><pre><span></span>yum -y install screen
+</pre></div>
+
+
+<p>debian/ubuntu: </p>
+<div class="highlight"><pre><span></span>apt-get install screen
+</pre></div>
+
+
+<ul>
+<li>1.2.2 创建screen</li>
+</ul>
+<div class="highlight"><pre><span></span>screen -S vps2arch
+</pre></div>
+
+
+<ul>
+<li>1.2.3 安装vps2arch</li>
+</ul>
+<div class="highlight"><pre><span></span>wget http://git.io/vps2arch
+chmod +x vps2arch
+./vps2arch
+</pre></div>
+
+
+<ul>
+<li>1.2.4 重启vps</li>
+</ul>
+<div class="highlight"><pre><span></span>sync <span class="p">;</span> reboot ...</pre></div> 
+						 <a class="more-link" href="/posts/2016/06/20160628/" rel="bookmark" title="Permalink to ArchLinux安装lnmp实录">Read more&#8230;</a>
 					</div>
 				</article>
 				
